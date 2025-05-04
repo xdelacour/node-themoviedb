@@ -133,7 +133,7 @@ const seasonEndpoints: RequestOption[] = [
   }, {
     type: 'GET',
     endpoint: `${endpointBaseURL}/{tv_id}/season/{season_number}/videos`,
-    name: 'getVideos', 
+    name: 'getVideos',
   }, {
     type: 'GET',
     endpoint: `${endpointBaseURL}/{tv_id}/season/{season_number}/watch/providers`,
