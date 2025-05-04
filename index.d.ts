@@ -412,6 +412,7 @@ declare namespace MovieDB {
         getExternalIDs(args: Arguments.TV.Season.GetExternalIDs): Response<Responses.TV.Season.GetExternalIDs>;
         getImages(args: Arguments.TV.Season.GetImages): Response<Responses.TV.Season.GetImages>;
         getVideos(args: Arguments.TV.Season.GetVideos): Response<Responses.TV.Season.GetVideos>;
+        getWatchProviders(args: Arguments.TV.Season.GetWatchProviders): Response<Responses.TV.Season.GetWatchProviders>;
       };
       episode: {
         getDetails(args: Arguments.TV.Episode.GetDetails): Response<Responses.TV.Episode.GetDetails>;
@@ -1234,6 +1235,8 @@ declare namespace MovieDB {
         interface GetImages extends Common {}
 
         interface GetVideos extends Common {}
+
+        interface GetWatchProviders extends Common {}
       }
 
       namespace Episode {
@@ -2816,6 +2819,58 @@ declare namespace MovieDB {
         }
 
         interface GetVideos extends Objects.Videos {}
+
+        interface GetWatchProviders {
+          id: number;
+          results: {
+            AR: Objects.TVShowWatchProvider
+            AT: Objects.TVShowWatchProvider
+            AU: Objects.TVShowWatchProvider
+            BE: Objects.TVShowWatchProvider
+            BR: Objects.TVShowWatchProvider
+            CA: Objects.TVShowWatchProvider
+            CH: Objects.TVShowWatchProvider
+            CL: Objects.TVShowWatchProvider
+            CO: Objects.TVShowWatchProvider
+            CZ: Objects.TVShowWatchProvider
+            DE: Objects.TVShowWatchProvider
+            DK: Objects.TVShowWatchProvider
+            EC: Objects.TVShowWatchProvider
+            EE: Objects.TVShowWatchProvider
+            ES: Objects.TVShowWatchProvider
+            FI: Objects.TVShowWatchProvider
+            FR: Objects.TVShowWatchProvider
+            GB: Objects.TVShowWatchProvider
+            GR: Objects.TVShowWatchProvider
+            HU: Objects.TVShowWatchProvider
+            ID: Objects.TVShowWatchProvider
+            IE: Objects.TVShowWatchProvider
+            IN: Objects.TVShowWatchProvider
+            IT: Objects.TVShowWatchProvider
+            JP: Objects.TVShowWatchProvider
+            KR: Objects.TVShowWatchProvider
+            LT: Objects.TVShowWatchProvider
+            LV: Objects.TVShowWatchProvider
+            MX: Objects.TVShowWatchProvider
+            MY: Objects.TVShowWatchProvider
+            NL: Objects.TVShowWatchProvider
+            NO: Objects.TVShowWatchProvider
+            NZ: Objects.TVShowWatchProvider
+            PE: Objects.TVShowWatchProvider
+            PH: Objects.TVShowWatchProvider
+            PL: Objects.TVShowWatchProvider
+            PT: Objects.TVShowWatchProvider
+            RO: Objects.TVShowWatchProvider
+            RU: Objects.TVShowWatchProvider
+            SE: Objects.TVShowWatchProvider
+            SG: Objects.TVShowWatchProvider
+            TH: Objects.TVShowWatchProvider
+            TR: Objects.TVShowWatchProvider
+            US: Objects.TVShowWatchProvider
+            VE: Objects.TVShowWatchProvider
+            ZA: Objects.TVShowWatchProvider
+          }
+        }
       }
 
       namespace Episode {
